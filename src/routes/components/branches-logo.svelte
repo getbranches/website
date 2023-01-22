@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let color: string = 'currentColor';
+	export let color = 'currentColor';
 </script>
 
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 414 69">
