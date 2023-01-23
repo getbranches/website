@@ -19,7 +19,7 @@
 	Branches is built from an idea that by making tailored integrations and applications, we can
 	improve peoples life. Our mission started in late 2022, and we are now ready to take on the world.
 </p>
-<p>Since inception, we have made four integrations:</p>
+<p>Since inception, we have made three integrations:</p>
 <ul>
 	<li><a href="https://www.tripletex.no/integrasjoner/timely/">Tripletex ↔ Timely</a></li>
 	<li>Tripletex ↔ Tripletex</li>
@@ -31,7 +31,7 @@
 </em>
 
 <p>
-	This is the people at Branches! 👇 You can reach out to us on <a href="mailto:hello@branches.no"
+	These are the people at Branches! 👇 You can reach out to us on <a href="mailto:hello@branches.no"
 		>hello@branches.no</a
 	>
 </p>
