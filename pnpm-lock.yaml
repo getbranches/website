@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@fontsource/lexend-deca':
-    specifier: ^4.5.14
-    version: 4.5.14
+    specifier: ^5.0.0
+    version: 5.0.0
   '@sveltejs/adapter-static':
     specifier: ^1.0.0
     version: 1.0.0(@sveltejs/kit@1.0.0)
@@ -274,8 +274,8 @@ packages:
       - supports-color
     dev: true
 
-  /@fontsource/lexend-deca@4.5.14:
-    resolution: {integrity: sha512-jHn2fxC/linkGvx6LxsPrpkkNcWbk6H+vITZgvB32D5whQDlyFDXnhYLODTzimLaJPsHEufxCCQHj95qz1rW8g==}
+  /@fontsource/lexend-deca@5.0.0:
+    resolution: {integrity: sha512-rnPpWO2EoyvsO6Bmvp5tveV3n7CdAZlVucwmy/YghemkW++0D8Z4UEsr1JS7KEHPFoTtggUlyKteO1YQcrlK6g==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.8:
