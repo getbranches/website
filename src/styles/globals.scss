@@ -4,6 +4,11 @@
 	font-family: 'Lexend Deca', sans-serif;
 	background-color: var(--color-app-bg);
 	color: var(--color-high-contrast-text);
+
+  // text smoothing / antialiasing / rendering
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 
 :global(a) {
