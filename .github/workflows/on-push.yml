@@ -1,4 +1,4 @@
-name: Workflow
+name: On Push / Schedule
 
 on:
   schedule:
@@ -66,3 +66,20 @@ jobs:
       - uses: atymic/sitemap-ping-action@master
         with:
           sitemap-url: https://branches.no/sitemap.xml
+  
+  todo-to-issue:
+    name: Create issue from TODO comments
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Create issue from TODO comments 📝
+        uses: derjuulsn/todo-issue@main
+        with:
+          excludePattern: '^(node_modules/)'
+          label: |
+            needs-refinement
+            needs-triage
+        env:
+          GITHUB_TOKEN: ${{ secrets.BJERKBOT_GITHUB_TOKEN }}
