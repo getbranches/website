@@ -1,63 +1,81 @@
 <script>
-	import Image from 'svimg';
-	import BranchesLogo from './components/branches-logo.svelte';
+	import Image from '$components/image.svelte';
+	import BranchesLogo from '../components/branches-logo.svelte';
+	import brageSekseAarset from '$assets/employees/brage-sekse-aarset.jpg?w=300&h=400';
+	import christinaLyra from '$assets/employees/christina-lyra.jpg?w=300&h=400';
+	import markusMoripen from '$assets/employees/markus-moripen.jpg?w=300&h=400';
+	import simenAWOlsen from '$assets/employees/simen-a-w-olsen.jpg?w=300&h=400';
+	import thomasBrustad from '$assets/employees/thomas-brustad.jpg?w=300&h=400';
 </script>
 
-<div class="logo-container">
-	<div class="logo">
-		<BranchesLogo color="var(--color-primary)" />
+<div class="container">
+  <div class="logo">
+		<BranchesLogo />
 	</div>
+
+	<p>Hello! 👋</p>
+	<p>
+		We are Branches, a subsidiary of the Oslo-based development agency <a href="https://bjerk.io"
+			>Bjerk</a
+		>.
+	</p>
+	<p>
+		Branches is built from an idea that by making tailored integrations and applications, we can
+		improve peoples life. Our mission started in late 2022, and we are now ready to take on the
+		world.
+	</p>
+	<p>Since inception, we have made three integrations:</p>
+	<ul>
+		<li><a href="https://www.tripletex.no/integrasjoner/timely/">Tripletex ↔ Timely</a></li>
+		<li>Tripletex ↔ Tripletex</li>
+		<li>ABAX → Procore</li>
+	</ul>
+	<em
+		>What makes these integrations special is that they're bespoke, meaning they're specially made
+		to make the user experience better.
+	</em>
+
+	<p>
+		These are the people at Branches! 👇 You can reach out to us on <a
+			href="mailto:hello@branches.no">hello@branches.no</a
+		>
+	</p>
 </div>
 
-<p>Hello! 👋</p>
-<p>
-	We are Branches, a subsidiary of the Oslo-based development agency <a href="https://bjerk.io"
-		>Bjerk</a
-	>.
-</p>
-<p>
-	Branches is built from an idea that by making tailored integrations and applications, we can
-	improve peoples life. Our mission started in late 2022, and we are now ready to take on the world.
-</p>
-<p>Since inception, we have made three integrations:</p>
-<ul>
-	<li><a href="https://www.tripletex.no/integrasjoner/timely/">Tripletex ↔ Timely</a></li>
-	<li>Tripletex ↔ Tripletex</li>
-	<li>ABAX → Procore</li>
-</ul>
-<em
-	>What makes these integrations special is that they're bespoke, meaning they're specially made to
-	make the user experience better.
-</em>
-
-<p>
-	These are the people at Branches! 👇 You can reach out to us on <a href="mailto:hello@branches.no"
-		>hello@branches.no</a
-	>
-</p>
-
-<div class="employees-grid">
-	<Image src="employees/brage-sekse-aarset.jpg" alt="Brage Sekse Aarset" />
-	<Image src="employees/christina-lyra.jpg" alt="Christina Lyra" />
-	<Image src="employees/markus-moripen.jpg" alt="Markus Moripen" />
-	<Image src="employees/simen-a-w-olsen.jpg" alt="Simen A. W. Olsen" />
-	<Image src="employees/thomas-brustad.jpg" alt="Thomas Brustad" />
+<div class="employees">
+	<div><Image src={brageSekseAarset} alt="Brage Sekse Aarset" /></div>
+	<div><Image src={christinaLyra} alt="Christina Lyra" /></div>
+	<div><Image src={markusMoripen} alt="Markus Moripen" /></div>
+	<div><Image src={simenAWOlsen} alt="Simen A. W. Olsen" /></div>
+	<div><Image src={thomasBrustad} alt="Thomas Brustad" /></div>
 </div>
 
 <style>
-	.logo-container {
+	.container {
 		display: flex;
+    flex-direction: column;
 		justify-content: center;
+
+    max-width: 60ch;
+		padding: 1rem;
 		margin: 2rem 0;
 	}
+
 	.logo {
 		width: 200px;
 	}
 
-	.employees-grid {
+	.employees {
+    width: 100%;
+    max-width: 850px;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 		grid-gap: 1rem;
 		margin-top: 2rem;
+	}
+
+	.employees div {
+		overflow: hidden;
+		object-fit: cover;
 	}
 </style>

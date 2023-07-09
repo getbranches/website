@@ -32,40 +32,13 @@
 	</slot>
 </div>
 
-<style>
-	:global(:root) {
-		--color-leaf-50: #d6ecdf;
-		--color-leaf-600: #26453d;
+<style lang="scss">
+  @use '$styles/globals.scss';
 
-		--color-sun-400: #f0bb6a;
-
-		--color-petal-50: #fff8f7;
-
-		--color-primary: var(--color-leaf-600);
-		--color-secondary: var(--color-sun-400);
-		--color-background: var(--color-petal-50);
-	}
-
-	:global(body) {
-		font-family: 'Lexend Deca', sans-serif;
-		background-color: var(--color-background);
-		color: var(--color-primary);
-	}
-
-	:global(a) {
-		color: inherit;
-		text-decoration: underline 0.15em rgba(0, 0, 0, 1);
-		transition: text-decoration-color 300ms;
-	}
-
-	:global(a:hover) {
-		text-decoration-color: rgba(0, 0, 0, 0);
-	}
-
-	.container {
-		max-width: 800px;
-		margin: 0 auto;
-
-		padding: 1rem;
-	}
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 </style>
