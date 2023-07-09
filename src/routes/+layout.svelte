@@ -22,11 +22,11 @@
 	}}
 />
 
-<div class="container">
+<main class="container">
 	<slot>
 		<!-- +page.svelte is rendered here -->
 	</slot>
-</div>
+</main>
 
 <style lang="scss">
 	@use '$styles/globals.scss';
