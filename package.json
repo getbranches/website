@@ -24,14 +24,12 @@
 	"dependencies": {
 		"@fontsource/lexend-deca": "^4.5.14",
 		"svelte-meta-tags": "^2.8.0",
-		"sass": "^1.63.6",
-		"schema-dts": "^1.1.0"
+		"sass": "^1.63.6"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/kit": "^1.5.0",
-		"@types/md5": "^2.3.2",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"eslint": "^8.28.0",

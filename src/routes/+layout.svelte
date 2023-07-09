@@ -1,10 +1,10 @@
 <script lang="ts">
 	import '@fontsource/lexend-deca';
-	import { serializeSchema } from '$lib/schema';
-	import type { LocalBusiness, WithContext } from 'schema-dts';
+	import { JsonLd } from 'svelte-meta-tags';
+</script>
 
-	const localBusiness: WithContext<LocalBusiness> = {
-		'@context': 'https://schema.org',
+<JsonLd
+	schema={{
 		'@type': 'LocalBusiness',
 		name: 'Branches',
 		url: 'https://branches.no',
@@ -19,12 +19,8 @@
 			addressCountry: 'NO'
 		},
 		telephone: '+47 95 30 80 87'
-	};
-</script>
-
-<svelte:head>
-	{@html serializeSchema(localBusiness)}
-</svelte:head>
+	}}
+/>
 
 <div class="container">
 	<slot>
