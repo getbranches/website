@@ -56,16 +56,16 @@
 		justify-content: center;
 		max-width: 60ch;
 
-    gap: 1rem;
+		gap: 1rem;
 	}
 
-  ul {
-    margin-left: 2rem;
-  }
+	ul {
+		margin-left: 2rem;
+	}
 
 	.logo {
 		width: 200px;
-    margin-bottom: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	.employees {
