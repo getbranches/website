@@ -13,11 +13,10 @@
 		<BranchesLogo />
 	</div>
 
-	<p>Hello! 👋</p>
+	<h1>Hello! 👋</h1>
 	<p>
-		We are Branches, a subsidiary of the Oslo-based development agency <a href="https://bjerk.io"
-			>Bjerk</a
-		>.
+		We are Branches, a subsidiary of the Oslo-based development agency
+		<a href="https://bjerk.io">Bjerk</a>.
 	</p>
 	<p>
 		Branches is built from an idea that by making tailored integrations and applications, we can
@@ -55,14 +54,18 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-
 		max-width: 60ch;
-		padding: 1rem;
-		margin: 2rem 0;
+
+    gap: 1rem;
 	}
+
+  ul {
+    margin-left: 2rem;
+  }
 
 	.logo {
 		width: 200px;
+    margin-bottom: 2rem;
 	}
 
 	.employees {
@@ -71,10 +74,11 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 		grid-gap: 1rem;
-		margin-top: 2rem;
+		padding: 1rem;
 	}
 
 	.employees div {
+		text-align: center;
 		overflow: hidden;
 		object-fit: cover;
 	}
