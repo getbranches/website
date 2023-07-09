@@ -22,7 +22,7 @@
 		"*.{js,ts}": "eslint --fix"
 	},
 	"dependencies": {
-		"@fontsource/lexend-deca": "^4.5.14",
+		"@fontsource/lexend-deca": "^5.0.0",
 		"svelte-meta-tags": "^2.8.0",
 		"sass": "^1.63.6",
 		"schema-dts": "^1.1.0"
