@@ -27,11 +27,12 @@
 		--color-dark: var(--color-leaf-600);
 
 		// App background
-		--color-app-bg: var(--arc-palette-title, var(--color-light));
+		--color-app-bg: var(--arc-palette-title, var(--color-leaf-600));
 
 		// High-contrast text
-		--color-high-contrast-text: var(--arc-palette-background, var(--color-leaf-600));
+		--color-high-contrast-text: var(--arc-palette-background, var(--color-light));
 	}
+
 	:global(html) {
 		color-scheme: dark;
 	}
