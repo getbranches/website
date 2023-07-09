@@ -1,17 +1,17 @@
 @use './colors.scss';
 
 :global(body) {
-  font-family: 'Lexend Deca', sans-serif;
-  background-color: var(--color-app-bg);
-  color: var(--color-high-contrast-text);
+	font-family: 'Lexend Deca', sans-serif;
+	background-color: var(--color-app-bg);
+	color: var(--color-high-contrast-text);
 }
 
 :global(a) {
-  color: inherit;
-  text-decoration: underline;
-  transition: text-decoration-color 10ms;
+	color: inherit;
+	text-decoration: underline;
+	transition: text-decoration-color 10ms;
 
-  &:hover {
-    text-decoration-color: var(--color-dark);
-  }
+	&:hover {
+		text-decoration-color: var(--color-dark);
+	}
 }

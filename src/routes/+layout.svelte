@@ -33,12 +33,12 @@
 </div>
 
 <style lang="scss">
-  @use '$styles/globals.scss';
+	@use '$styles/globals.scss';
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 </style>

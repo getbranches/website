@@ -3,12 +3,15 @@ import { imagetools } from 'vite-imagetools';
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [imagetools({
+	plugins: [
+		imagetools({
 			defaultDirectives: new URLSearchParams({
 				format: 'avif;webp',
 				as: 'picture'
 			})
-		}),sveltekit()],
+		}),
+		sveltekit()
+	],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	}

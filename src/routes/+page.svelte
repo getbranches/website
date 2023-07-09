@@ -9,7 +9,7 @@
 </script>
 
 <div class="container">
-  <div class="logo">
+	<div class="logo">
 		<BranchesLogo />
 	</div>
 
@@ -53,10 +53,10 @@
 <style>
 	.container {
 		display: flex;
-    flex-direction: column;
+		flex-direction: column;
 		justify-content: center;
 
-    max-width: 60ch;
+		max-width: 60ch;
 		padding: 1rem;
 		margin: 2rem 0;
 	}
@@ -66,8 +66,8 @@
 	}
 
 	.employees {
-    width: 100%;
-    max-width: 850px;
+		width: 100%;
+		max-width: 850px;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 		grid-gap: 1rem;
