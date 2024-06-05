@@ -1,4 +1,3 @@
-![Branches](./.github/hero.svg)
 
 We build tailored applications and integrations to improve peoples life.
 This is our website, hope it made your day :-)
